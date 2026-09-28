@@ -13,6 +13,11 @@
     background: linear-gradient(135deg, #667eea, #764ba2);
     min-height: 100vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
 }
 
 
@@ -105,6 +110,8 @@
 
     text-decoration: none;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
 
     transition: 0.3s;
 }
@@ -112,4 +119,104 @@
 .botones__boton:hover {
     transform: translateY(-3px);
     background: #f1f1f1;
+}
+
+
+/* ==========================================
+   FORMULARIO
+========================================== */
+
+.formulario {
+    background: #111111;
+    border: 1px solid #262626;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.formulario--horizontal {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.formulario__label {
+    font-size: 13px;
+    color: #a0a0a0;
+}
+
+.formulario__input {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #333333;
+    outline: none;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.formulario__input:focus {
+    border-color: #ffffff;
+}
+
+.formulario__boton {
+    background: #ffffff;
+    color: #000000;
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.formulario__boton:hover {
+    background: #d4d4d4;
+}
+
+
+/* ==========================================
+   REGISTRO
+========================================== */
+
+.tabla {
+    background: #111111;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    border-collapse: collapse;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tabla__header, 
+.tabla__dato {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #222222;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.tabla__header {
+    background: #1a1a1a;
+    color: #a0a0a0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.tabla__fila:last-child .tabla__dato {
+    border-bottom: none;
 }
