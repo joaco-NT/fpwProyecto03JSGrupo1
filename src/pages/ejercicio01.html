@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 01 - Datos Personales</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+ 
 <body class="pagina">
-
     <nav class="navegacion">
-        <a class="navegacion__enlace" href="/src/pages/index.html">Principal</a>
-        <a class="navegacion__enlace" href="/src/pages/ejercicio01.html">Ejercicio01</a>
-        <a class="navegacion__enlace" href="/src/pages/ejercicio02.html">Ejercicio02</a>
+        <a class="navegacion__enlace" href="index.html">Principal</a>
+        <a class="navegacion__enlace" href="ejercicio01.html">Ejercicio01</a>
+        <a class="navegacion__enlace" href="ejercicio02.html">Ejercicio02</a>
     </nav>
 
-    <h1>¡Ejercicio01!</h1>
+    <!-- Formulario con BEM -->
+    <form id="formPersona" class="formulario formulario--horizontal">
+        <div class="formulario__campo">
+            <label class="formulario__label" for="inputNombre">Nombre:</label>
+            <input class="formulario__input" type="text" id="inputNombre" autocomplete="off" required>
+        </div>
+        <div class="formulario__campo">
+            <label class="formulario__label" for="inputApellido">Apellido:</label>
+            <input class="formulario__input" type="text" id="inputApellido" autocomplete="off" required>
+        </div>
+        <div class="formulario__campo">
+            <label class="formulario__label" for="inputLibreta">Libreta Universitaria:</label>
+            <input class="formulario__input" type="text" id="inputLibreta" autocomplete="off" required>
+        </div>
+        <button type="submit" class="formulario__boton">Agregar</button>
+    </form>
 
-    <script type="module" src="/src/js/ejercicio01.js"></script>
-    
+    <!-- Tabla con BEM -->
+    <table class="tabla">
+        <thead class="tabla__head">
+            <tr class="tabla__fila">
+                <th class="tabla__header">Nombre</th>
+                <th class="tabla__header">Apellido</th>
+                <th class="tabla__header">Libreta Universitaria</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla" class="tabla__body">
+            <!-- Contenedor para las filas dinámicas -->
+        </tbody>
+    </table>
+
+    <script type="module" src="../js/ejercicio01.js"></script>
 </body>
 </html>
