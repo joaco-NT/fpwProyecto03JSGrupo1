@@ -1,0 +1,115 @@
+/* =========================
+   PAGINA
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pagina {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    color: white;
+}
+
+
+/* =========================
+   NAVEGACION
+========================= */
+
+.navegacion {
+    width: 100%;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.navegacion__enlace {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navegacion__enlace:hover {
+    background: white;
+    color: #667eea;
+}
+
+
+/* =========================
+   PRESENTACION
+========================= */
+
+.presentacion {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px;
+}
+
+.presentacion__contenedor {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+
+    padding: 50px;
+    border-radius: 20px;
+    max-width: 1000px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.presentacion__titulo {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.presentacion__descripcion {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.botones__boton {
+    background: white;
+    color: #667eea;
+
+    padding: 12px 25px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botones__boton:hover {
+    transform: translateY(-3px);
+    background: #f1f1f1;
+}
