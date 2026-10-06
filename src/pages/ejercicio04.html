@@ -15,7 +15,20 @@
         <a class="navegacion__enlace" href="./ejercicio04.html">Ejercicio 04</a>
         <a class="navegacion__enlace" href="./ejercicio05.html">Ejercicio 05</a>
     </nav>
-    <h1>¡Ejercicio04!</h1>
-    <script type="module" src="../js/ejercicio02.js"></script>
+     <h1>Buscador de películas</h1>
+      <select id="filtroGenero">
+        <option value="todos">Todos</option>
+        <option value="Acción">Acción</option>
+        <option value="Comedia">Comedia</option>
+        <option value="Drama">Drama</option>
+    </select>
+
+    <button id="btnFiltrar">Filtrar</button>
+
+    <ul id="listaPeliculas"></ul>
+
+    <script src="../services/services04.js"></script>
+    <script src="../js/ejercicio04.js"></script>
+
 </body>
 </html>
