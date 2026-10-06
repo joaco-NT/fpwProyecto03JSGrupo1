@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 01 -  formulario"</title>
+    <title>Ejercicio 01 - formulario"</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+ 
 <body class="pagina">
     <nav class="navegacion">
         <a class="navegacion__enlace" href="./index.html">Inicio</a>
@@ -15,7 +16,36 @@
         <a class="navegacion__enlace" href="./ejercicio04.html">Ejercicio 04</a>
         <a class="navegacion__enlace" href="./ejercicio05.html">Ejercicio 05</a>
     </nav>
-    <h1>¡Ejercicio01!</h1>
+
+    <form id="formPersona" class="formulario formulario--horizontal">
+        <div class="formulario__campo">
+            <label class="formulario__label" for="inputNombre">Nombre:</label>
+            <input class="formulario__input" type="text" id="inputNombre" autocomplete="off">
+        </div>
+        <div class="formulario__campo">
+            <label class="formulario__label" for="inputApellido">Apellido:</label>
+            <input class="formulario__input" type="text" id="inputApellido" autocomplete="off">
+        </div>
+        <div class="formulario__campo">
+            <label class="formulario__label" for="inputLibreta">Libreta Universitaria:</label>
+            <input class="formulario__input" type="text" id="inputLibreta" autocomplete="off">
+        </div>
+        <button type="submit" class="formulario__boton">Agregar</button>
+    </form>
+
+    <table class="tabla">
+        <thead class="tabla__head">
+            <tr class="tabla__fila">
+                <th class="tabla__header">Nombre</th>
+                <th class="tabla__header">Apellido</th>
+                <th class="tabla__header">Libreta Universitaria</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla" class="tabla__body">
+            <!-- Contenedor para las filas dinámicas -->
+        </tbody>
+    </table>
+
     <script type="module" src="../js/ejercicio01.js"></script>
 </body>
 </html>
